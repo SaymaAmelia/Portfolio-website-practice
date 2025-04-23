@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import "tailwindcss";
+
+
+@theme {
+    --font-roboto: "Roboto", sans-serif; 
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    @apply bg-zinc-900 text-zinc-50 ;
+  }
+   /*?conpmenu-btnonents css part */
+   .menu-btn{
+    @apply  w-10 h-10 grid place-items-center rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,shadow] duration-300 active:scale-95 active:shadow-[0_0_0_1px] active:shadow-zinc-50/10;
+
+  }
+  .navbar{
+    @apply absolute top-full mt-2 md:static  backdrop:blur-2xl md:flex md:items-center md:mt-0 md:opacity-100 md:blur-[0]  md:scale-100  bg-zinc-50/10 right-0    min-w-40 p-2 md:visible rounded-2xl ring-inset ring-1 ring-zinc-50 scale-90  opacity-0 invisible  transition-[transform,opacity,filter] duration-300;
+  }
+  
+  .nav-link{
+    @apply grid items-center h-9 text-center 
+     text-zinc-50/50 font-medium text-sm rounded-lg px-4 py-2 transition-colors duration-300;
+  }
+  
+  .navbar.active{
+    @apply scale-100 opacity-100 visible;
+  }
+  /* .navbar.active-box{
+    @apply absolute  bg-red-300 rounded-lg 
+  } */
+  .active-box {
+    @apply absolute rounded-lg bg-zinc-50/10 transition-all duration-300 ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* ? ---------------------------hero part css----------------------------- */
+
+
+  .container{
+    @apply px-4 mx-auto lg:px-8 
+  }
+  .heading-1{
+    @apply text-5xl  leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
+  }
+  .heading-1{
+    @apply max-w-max;
+    background:-webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+    -webkit-background-clip: text;
+  }
+  btn{
+    @apply max-w-max h-9 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 flex items-center justify-center ring-inset transition-[background-color] 
+  }
+  
+
+
+
+.btn-secondary{
+  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80
+}
+ .btn .material-symbols-rounded{
+  @apply text-[18px] flex justify-center 
+}
+.btn:has(.material-symbols-rounded){
+  @apply pr-2 
+}
+.btn-primary{
+  @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400 px-3 rounded-md
+}
+.btn-outline{
+  @apply h-11 bg-zinc-800 hover:bg-zinc-50/50 active:bg-zinc-800 text-white rounded-md }
