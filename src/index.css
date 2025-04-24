@@ -63,7 +63,7 @@
 }
 
   .btn{
-    @apply max-w-max h-9 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 flex items-center justify-center ring-inset transition-[background-color] 
+    @apply max-w-max h-9 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 flex items-center gap-x-2 ring-inset transition-[background-color] 
   }
   
 

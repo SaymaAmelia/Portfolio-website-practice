@@ -5,7 +5,7 @@ import 'material-symbols';
 
 const Hero = () => {
   return (
-    <section id='home' className='pt-28 lg:pt-36 mb-10 lg:mb-0'>
+    <section id='home' className='pt-28 lg:pt-36  lg:mb-0'>
        <div className='container lg:grid lg:grid-cols-2 items-center lg:gap-10'>
         <div>
             <div className='flex  items-center gap-3'>
