@@ -45,7 +45,8 @@
   .container{
     @apply px-4 mx-auto lg:px-8 
   }
-  .heading-1{
+  .heading-1,
+  .heading-2{
     @apply text-5xl  leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
   }
   .heading-1{
@@ -53,7 +54,15 @@
     background:-webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
     -webkit-background-clip: text;
   }
-  btn{
+
+.heading-2{
+  @apply text-3xl lg:text-4xl font-semibold lg:leading-tight;
+}
+.section{
+  @apply pt-20 lg:pt-32
+}
+
+  .btn{
     @apply max-w-max h-9 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 flex items-center justify-center ring-inset transition-[background-color] 
   }
   
