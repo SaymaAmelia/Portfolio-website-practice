@@ -9,7 +9,7 @@ ratings.fill({
 
 console.log(ratings) 
     return ( 
-    <div className="bg-zinc-800 p-5 rounded-xl  ">
+    <div className="bg-zinc-800 p-5 rounded-xl min-w-[320px]  ">
         <div className=""> 
           {ratings.map(({icons, style}, key)=>(
             <span 
@@ -39,7 +39,7 @@ console.log(ratings)
        <p>
           {name}
         </p>
-        <p className='text-xs text-zinc-400 traking-wider'>
+        <p className='text-xs text-zinc-400 traking-wider *:'>
           {company}
         </p>
        </div>
