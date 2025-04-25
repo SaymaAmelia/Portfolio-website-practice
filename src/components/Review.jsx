@@ -43,13 +43,13 @@ const Review = () => {
   return (
     <section
     id='review'
-    className='secion'
+    className='section overflow-hidden'
     >
-        <div>
-            <h2 className='heading-2'>
+        <div className='container'>
+            <h2 className='heading-2 mb-8'>
                 What over clients say
             </h2>
-            <div>
+            <div className='flex items-stretch gap-3 w-fit'>
                 {
                     reviews.map(({content, name, imgSrc, company}, key)=>(
                        <ReviewCard

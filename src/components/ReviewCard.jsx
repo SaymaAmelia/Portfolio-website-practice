@@ -9,7 +9,7 @@ ratings.fill({
 
 console.log(ratings) 
     return ( 
-    <div className="">
+    <div className="bg-zinc-800 p-5 rounded-xl  ">
         <div className=""> 
           {ratings.map(({icons, style}, key)=>(
             <span 
@@ -26,24 +26,28 @@ console.log(ratings)
           {content}
         </p>
        
-       <div>
-        <figure className='img-box'>
-          <img src="imgSrc" alt={name}
+       <div className='flex items-center gap-2 mt-auto'>
+        <figure className='img-box rounded-lg'>
+          <img src={imgSrc} alt={name}
           width={44}
           height={44}
           leading="lazy"
           />
         </figure>
-       </div>
 
        <div>
-        <p>
+       <p>
           {name}
         </p>
-        <p>
+        <p className='text-xs text-zinc-400 traking-wider'>
           {company}
         </p>
        </div>
+       </div>
+
+       
+        
+       
 
       </div>
   )
