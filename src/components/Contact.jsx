@@ -62,7 +62,7 @@ const Contact = () => {
             </div>
            </div>
 {/* form part start here */}
-           <form action=""
+           <form action="https://getform.io/f/allyrgla"
            method='POST'
            className=" xl:pl-10  2xl:pl-20 " >
               <div className='md:grid md:items-center md:grid-cols-2 md:gap-2'>
