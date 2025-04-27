@@ -14,31 +14,45 @@
     @apply bg-zinc-900 text-zinc-50 ;
   }
    /*?conpmenu-btnonents css part */
+
+
+   /* utilities */
+
+   .material-symbols-rounded{
+    @apply w-[1em] h-[1em] overflow-hidden;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+   }
+
    .menu-btn{
-    @apply  w-10 h-10 grid place-items-center rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,shadow] duration-300 active:scale-95 active:shadow-[0_0_0_1px] active:shadow-zinc-50/10;
+    @apply  w-10 h-10 grid place-items-center md:hidden rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/10 transition-[transform,background-color] duration-300 active:scale-95  ;
 
   }
+
+   
   .navbar{
-    @apply absolute top-full mt-2 md:static  backdrop:blur-2xl md:flex md:items-center md:mt-0 md:opacity-100 md:blur-[0]  md:scale-100  bg-zinc-50/10 right-0    min-w-40 p-2 md:visible rounded-2xl ring-inset ring-1 ring-zinc-50 scale-90  opacity-0 invisible  transition-[transform,opacity,filter] duration-300;
+    @apply absolute top-full mt-2  md:static  backdrop:blur-2xl md:flex md:items-center md:mt-0 md:opacity-100 md:blur-[0]  md:scale-100  bg-zinc-50/10 right-0 blur-sm backdrop-blur-2xl   min-w-40 p-2 md:visible rounded-2xl ring-inset ring-1 ring-zinc-50 scale-90  opacity-0 invisible  transition-[transform,opacity,filter] ;
   }
   
   .nav-link{
-    @apply grid items-center h-9 text-center 
-     text-zinc-50/50 font-medium text-sm rounded-lg px-4 py-2 transition-colors duration-300;
+    @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;
+  }
+  .nav-link.active{
+    @apply text-zinc-900 duration-500
   }
   
   .navbar.active{
-    @apply scale-100 opacity-100 visible;
+    @apply scale-100 opacity-100 blur-[0] visible;
   }
-  /* .navbar.active-box{
-    @apply absolute  bg-red-300 rounded-lg 
-  } */
+  .navbar .active-box{
+    @apply absolute  bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-500
+  }
+    
   .active-box {
     @apply absolute rounded-lg bg-zinc-50/10 transition-all duration-300 ease-in-out;
     pointer-events: none;
     z-index: -1;
   }
-
+ 
   /* ? ---------------------------hero part css----------------------------- */
 
 
@@ -63,7 +77,7 @@
 }
 
   .btn{
-    @apply max-w-max h-9 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 flex items-center gap-x-2 ring-inset transition-[background-color] 
+    @apply max-w-max h-9 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 flex items-center gap-2 ring-inset transition-[background-color] 
   }
   
 
