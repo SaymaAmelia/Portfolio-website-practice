@@ -8,10 +8,12 @@ import Review from './components/Review'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+import { ReactLenis, useLenis } from 'lenis/react'
+
 
 const App = () => {
   return (
-    <>
+    <ReactLenis root>
       <NavPage/>
        <main>
         <Hero/>
@@ -22,7 +24,7 @@ const App = () => {
        <Contact/>
        </main>
        <Footer/>
-    </>
+       </ReactLenis>
   )
 }
 

@@ -50,12 +50,12 @@ const sitemap = [
    
    const Footer = () => {
      return (
-       <footer className='section'>
+       <footer className='section mb-10'>
          <div className='container'>
           <div className='lg:grid lg:grid-cols-2'>
 
-            <div className='mb-10'>
-                <h2 className='heading-1 mb:8 lg:max-w-[12ch] '>
+            <div className=' mb-8 lg:mb-10'>
+                <h2 className='heading-1 mb-8 lg:mb-10 lg:max-w-[12ch] '>
                      Let&apos;s work together today!
                 </h2>
                 <ButtonPrimary
@@ -99,7 +99,18 @@ const sitemap = [
 
           </div>
 
+          <div className='flex items-center justify-between pt-10mb-8'>
+          <a href=" ">
+            <img src="/images/logo.svg" width={40} height={40} alt="logo.svg" />
+          </a>
+          <p className='text-zinc-500 text-sm'>
+            &copy; 2025 <span className='text-zinc-200'>hanryClark</span>
+          </p>
+
          </div>
+
+         </div>
+       
 
        </footer>
      )

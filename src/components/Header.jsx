@@ -8,7 +8,7 @@ const Header = () => {
   
 
   return (
-    <header className='fixed top-0 left-0 right-0 bg-white shadow-md p-4 flex justify-between items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0'>
+    <header className='fixed top-0 left-0 right-0 shadow-md p-4 flex justify-between items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0'>
       <div className='max-w-screen-2xl w-full mx-auto  px-4  md:px-6 flex justify-between items-center ' >
         <h1>
           <a href="/"

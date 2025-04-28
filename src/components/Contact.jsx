@@ -121,9 +121,11 @@ const Contact = () => {
 
                </div>
 
-               <button className='btn btn-primary [&]:max-w-full w-full mt-2' type='submit'>
+             
+              <button className='btn btn-primary laddo [&]:max-w-full  ' type='submit'>
                                Submit
                 </button>
+             
 
            </form>
 
