@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className='fixed top-0 left-0 right-0 bg-white shadow-md p-4 flex justify-between items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0'>
-      <div className='max-w-screen-2xl w-full mx-auto  px-4  md:px-6 flex justify-between items-center md:grid md:grid-cols-[1fr,3fr,1fr] md:gap-4' >
+      <div className='max-w-screen-2xl w-full mx-auto  px-4  md:px-6 flex justify-between items-center ' >
         <h1>
           <a href="/"
           className='logo'
@@ -22,7 +22,7 @@ const Header = () => {
         </h1>
      
 
-      <div className='relative md:justify-self-center flex items-center justify-center'>
+      <div className='relative md:justify-self-center flex items-center justify-center md:justify-between'>
       
         <button className='menu-btn ' 
             onClick={()=>setNavOpen((prev)=>!prev)}
@@ -35,10 +35,13 @@ const Header = () => {
         <Navbar navOpen={navOpen   } />  
       </div>
 
-       {/* <a href="#contact"
-           className='btn btn-secondary  lg:block btn btn-secondary max-md:hidden md:justify-self-end'>
+      <div className='hidden md:block'>
+      <a href="#contact"
+           className='btn btn-secondary hidden invisible opacity-0 h-0 w-0 md:visible md:opacity-100 md:h-auto md:w-auto'>
+           
         contact me
-       </a> */}
+       </a>
+      </div>
       </div>
        
     </header>
